@@ -1,0 +1,16 @@
+[package]
+name = "kiwinx-core"
+version.workspace = true
+edition.workspace = true
+rust-version.workspace = true
+
+[lints]
+workspace = true
+
+[dependencies]
+kiwinx-common = { path = "../kiwinx-common" }
+kiwinx-cpu = { path = "../kiwinx-cpu" }
+kiwinx-memory = { path = "../kiwinx-memory" }
+
+[dev-dependencies]
+kiwinx-testkit = { path = "../kiwinx-testkit" }

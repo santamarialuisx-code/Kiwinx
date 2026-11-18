@@ -1,0 +1,21 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/kiwinx-common",
+    "crates/kiwinx-memory",
+    "crates/kiwinx-cpu",
+    "crates/kiwinx-core",
+    "crates/kiwinx-testkit",
+    "crates/kiwinx-cli",
+]
+
+[workspace.package]
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.74"
+
+[workspace.lints.rust]
+unsafe_code = "forbid"
+
+[workspace.lints.clippy]
+all = "warn"
